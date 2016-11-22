@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/vendor/bootstrap/css/superhero.bootstrap.min.css">
+    <link rel="stylesheet" href="./static/stylesheets/style.css">
+  </head>
+  <body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-81895206-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid container-navbar">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling-->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li id="home"><a href="index.html">HOME</a></li>
+            <li id="projects"><a href="projects.html" class="smallcaps">PROJECTS<span class="sr-only">(current)</span></a></li>
+            <li id="resume"><a href="resume.html">RESUME</a></li>
+            <li id="contact"><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right"></ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="json-row" class="row">
+        <div class="col-xs-12">
+          <h3>JSON Navigator &nbsp;&nbsp;<small><a href="http://json-navigator.com" target="_blank">Live</a>&nbsp;|&nbsp;<a href="https://github.com/rylandbell/json-navigator" target="_blank">GitHub</a></small></h3>
+        </div>
+      </div>
+      <hr class="hr-narrow">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="thumbnail"><a href="http://json-navigator.com" target="_blank"><img src="./static/images/json.png" alt="preview image for JSON explorer app"></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <div class="description transparent"> 
+            <p>Inspired by the macOS Finder's column view, I made a simple tool that offers a visual way to navigate JSON data. This tool can help with gaining a general sense of a JSON-encoded object's data structure, or with finding the path needed to reference a specific value.</p>
+            <p><strong>Skills used:&nbsp;</strong>React/Redux, Webpack, JSON, Bootstrap, SCSS, Unit testing (Mocha w/ Expect)</p>
+            <p><strong>Spring 2016</strong></p>
+          </div>
+        </div>
+      </div>
+      <hr class="visible-xs">
+      <div id="nba-row" class="row">
+        <div class="col-xs-12">
+          <h3>NBA Predictions Game &nbsp;&nbsp;<small><a href="http://nba.ryland-bell.com" target="_blank">Live</a>&nbsp;|&nbsp;<a href="https://github.com/rylandbell/nba-predictions" target="_blank">GitHub</a></small></h3>
+        </div>
+      </div>
+      <hr class="hr-narrow">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="thumbnail"><a href="http://nba.ryland-bell.com" target="_blank"><img src="./static/images/nba-thumb.png" alt="preview image for NBA Predictions Game"></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <div class="description transparent"> 
+            <p> <i>Pick the winner of one NBA game per day. Over the course of a month, don’t pick the same team twice. The player with the most correct picks at the end of the month wins.</i></p>
+            <p>I’ve written a full-stack web app to implement the above game. On the backend, an Express app works with a MongoDB database to track user picks, enforce the each-team-once-per-month rule, and score predictions using game outcome data from nba.com. In the browser, a React/Redux app provides a user-friendly interface for making picks and tracking outcomes over the course of a month.</p>
+            <p><strong>Skills used:&nbsp;</strong>React/Redux/React-Router, Node/Express, MongoDB, Webpack, Bootstrap</p>
+            <p><strong>Fall 2016</strong></p>
+          </div>
+        </div>
+      </div>
+      <hr class="visible-xs">
+      <div id="calendar-row" class="row">
+        <div class="col-xs-12">
+          <h3>YouCanBook.me Helper Tool &nbsp;&nbsp;<small><a href="http://wasatch.ryland-bell.com/calendar" target="_blank">Live</a>&nbsp;|&nbsp;<a href="https://github.com/rylandbell/wasatch" target="_blank">GitHub</a></small></h3>
+        </div>
+      </div>
+      <hr class="hr-narrow">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="thumbnail"><a href="http://wasatch.ryland-bell.com/calendar" target="_blank"><img src="./static/images/calendar.png" alt="preview image for scheduling tool"></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <div class="description transparent">
+            <p>This is a single completed component for an ongoing client project. I was asked to find a good way for clinicians and clients to make appointments with each other. Rather than reinvent the wheel, I opted to encourage use of Google Calendar and YouCanBook.Me, and built a companion app to make the process of creating appointment slots as easy as possible.</p>
+            <p>My app is designed as a convenient tool to do a few tasks quickly and easily; it’s not meant to be a full-featured calendar app. Its primary feature is the ability to "paint" open time periods on the calendar via a draggable element. Once a Google calendar is connected to a paid youcanbook.me account, availability slots will be automatically generated everywhere the clinician has “painted” green on their calendar. (Note that the linked GitHub repository includes code for the full app, and not just the calendar. The calendar's JavaScript files are found in ~/public/javascripts/calendar.)</p>
+            <p><strong>Skills used:&nbsp;</strong>Node, Express, jQuery (and the FullCalendar plugin), Google Calendar API, Bootstrap</p>
+            <p><strong>Spring/Summer 2016</strong></p>
+          </div>
+        </div>
+      </div>
+      <hr class="visible-xs">
+      <div id="taskman-row" class="row"> 
+        <div class="col-xs-12">
+          <h3>TaskMan &nbsp;&nbsp;<small><a href="http://taskman.ryland-bell.com" target="_blank">Live</a>&nbsp;|&nbsp;<a href="https://github.com/rylandbell/taskman" target="_blank">GitHub</a></small></h3>
+        </div>
+      </div>
+      <hr class="hr-narrow">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="thumbnail"><a href="http://taskman.ryland-bell.com" target="_blank"><img src="./static/images/taskman.png" alt="preview image for task manager"></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <div class="description transparent">
+            <p>TaskMan is the world's most original (<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-html="true" data-content="Well, maybe not the &lt;em&gt;most&lt;/em&gt; original...">*</a>) task-tracking web app. It's a Node/Express app, connected to a MongoDB database via a RESTful API.</p>
+            <p>Features include:</p>
+            <ul>
+              <li>Create a secure, password-protected account for your personal to-do list.</li>
+              <li>Create an event, add details and a due date, and mark it complete when finished.</li>
+              <li>Send an event directly to your Google calendar.</li>
+            </ul>
+            <p><strong>Skills used:&nbsp;</strong>Node, Express, MongoDB, Mongoose, Passport, JWT Authentication, OAuth 2.0, Google Calendar API, AJAX, Bootstrap  </p>
+          </div>
+        </div>
+      </div>
+      <hr class="visible-xs">
+      <div id="snake-row" class="row"> 
+        <div class="col-xs-12">
+          <h3>Snake Game &nbsp;&nbsp;<small><a href="./static/snake/index.html" target="_blank">Live</a>&nbsp;|&nbsp;<a href="https://github.com/rylandbell/snake" target="_blank">GitHub</a></small></h3>
+        </div>
+      </div>
+      <hr class="hr-narrow">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="thumbnail"><a href="./static/snake/index.html" target="_blank"><img src="./static/images/snake.png" alt="preview image for snake game"></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <div class="description transparent">
+            <p>A simple snake game, and one of my earliest completed projects. It uses localStorage to store high scores. Can you beat my personal record of 51?</p>
+            <p><strong>Skills used:&nbsp;</strong>Javasript, jQuery, CSS, event listeners, localStorage</p>
+            <p><strong>Fall 2015</strong></p>
+          </div>
+        </div>
+      </div>
+      <footer> 
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="pull-right"> <small>&copy; Ryland Bell 2016</small></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./static/vendor/jquery-1.11.1.min.js"></script>
+    <script src="./static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./static/javascripts/ui.js"></script>
+  </body>
+</html>
