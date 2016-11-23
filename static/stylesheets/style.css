@@ -27,8 +27,6 @@ footer {
   font-size: 2em;
 }
 
-
-
 /*recurring div-styling classes:*/
 .skinny {
   max-width: 900px;
@@ -164,4 +162,9 @@ dl {
   .welcome {
     min-height: 498px;
   }
+}
+
+/*-----------------Unsorted----------------*/
+a:hover {
+  text-decoration: none;
 }
