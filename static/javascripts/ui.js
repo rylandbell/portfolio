@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
   //mark current page as active in navbar:
-  var url = window.location.pathname;
-  url = url.substring(1, url.length-1);
-  console.log(url);
-  $('#' + url).addClass('active');
+  var urlArray = window.location.pathname.split('/');
+  var urlLastStep = urlArray[urlArray.length-1];
+  // url = url.substring(1, url.length-1);
+  $('#' + urlLastStep).addClass('active');
 
   //initialize Bootstrap popovers:
   $(function () {
