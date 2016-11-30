@@ -1,7 +1,7 @@
 /* full-site layout: */
 
 body{
-  background: url(../images/denim.png) repeat 0 0;
+  /*background: url(../images/denim.png) repeat 0 0;*/
   background-attachment: fixed;
 }
 
@@ -48,14 +48,7 @@ footer {
   top: -21px;
 }
 
-.description {
-  position: relative;
-  /*top: 60px;*/
-  /*margin-bottom: 50px;*/
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-size: 1.2em;
-}
+
 
 .description p:last-child{
   margin-bottom: 0;
@@ -223,6 +216,15 @@ dl {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+}
+
+.portfolio-description {
+  position: relative;
+  margin-top: 10px;
+  background-color:rgba(255,255,255,0.1);
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 1.2em;
 }
 
 /*-----------------Unsorted----------------*/
