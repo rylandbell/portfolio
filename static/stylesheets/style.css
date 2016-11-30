@@ -1,7 +1,7 @@
 /* full-site layout: */
 
 body{
-  /*background: url(../images/denim.png) repeat 0 0;*/
+  /*background: url(../images/noisy_net_big.png) repeat 0 0;*/
   background-attachment: fixed;
 }
 
@@ -182,6 +182,7 @@ dl {
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
+  z-index: 3;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -197,6 +198,7 @@ dl {
   top: 50%;
   margin-top: -12px;
   color: white;
+
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
@@ -209,7 +211,7 @@ dl {
 }
 
 #portfolio * {
-  z-index: 2;
+  /*z-index: 2;*/
 }
 
 @media (min-width: 767px) {
@@ -220,8 +222,11 @@ dl {
 
 .portfolio-description {
   position: relative;
+  /*top: -200px;*/
+  /*margin: 10px;*/
   margin-top: 10px;
-  background-color:rgba(255,255,255,0.1);
+  background-color:rgba(78, 93, 108, .8);
+  z-index: 1;
   padding: 10px 5px;
   border-radius: 5px;
   font-size: 1.2em;
