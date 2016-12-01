@@ -26,7 +26,6 @@
         <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li id="home"><a href="./">HOME</a></li>
-            <li id="projects"><a href="projects" class="smallcaps">PROJECTS<span class="sr-only">(current)</span></a></li>
             <li id="resume"><a href="resume">RESUME</a></li>
             <li id="contact"><a href="contact">CONTACT</a></li>
           </ul>
@@ -35,52 +34,175 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-7 col-lg-8">
-          <div class="transparent welcome">
-            <h2>Welcome.</h2>
-            <div class="lead">Hi, I'm Ryland. I'm a new web developer, and want to share some of my favorite personal and freelance projects. </div>
-            <div class="lead">As a self-taught developer, every project has been a valuable chance to apply skills I've been learning and to identify the areas where I still need more practice. While none of these apps are perfect, my hope is that each shows a more capable and mature developer than its predecessors. Click on a thumbnail to learn more about a project, or go directly to my &nbsp;<a href="projects">Projects</a>&nbsp; page to view them all.</div>
+      <div class="row shaded-row">
+        <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+          <div id="portfolio">
+            <h2>Welcome</h2>
+            <div class="lead">Hi, I'm Ryland. I'm a new web developer, and would like to share some of my favorite personal and freelance projects with you. As a self-taught developer, every project has been a valuable chance to apply skills I've learned and to identify the areas where I still need more practice. My hope is that each shows a more capable and mature developer than its predecessors.</div>
             <div class="row">
-              <div class="col-xs-6 col-sm-4"><a href="projects#json-row">
-                  <div class="thumbnail"><img src="./static/images/json.png" alt="thumbnail for JSON explorer">
-                    <div class="caption"><strong>JSON Navigator</strong></div>
-                  </div></a></div>
-              <div class="col-xs-6 col-sm-4"><a href="projects#nba-row">
-                  <div class="thumbnail"><img src="./static/images/nba-thumb.png" alt="thumbnail for task manager app">
-                    <div class="caption"> <strong>NBA Predictions Game</strong></div>
-                  </div></a></div>
-              <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
-              <div class="col-xs-6 col-sm-4"><a href="projects#calendar-row">
-                  <div class="thumbnail"><img src="./static/images/calendar.png" alt="thumbnail for scheduling tool">
-                    <div class="caption"><strong>YouCanBook.me Helper Tool</strong></div>
-                  </div></a></div>
+              <!-- Thumbnails trigger modals-->
+              <div class="col-sm-4 portfolio-item"><a data-toggle="modal" data-target="#nba-modal" href="#" class="portfolio-link">
+                  <div class="caption">
+                    <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
+                  </div><img src="./static/images/nba-thumb.png" alt="preview image for NBA Predictions Game" class="img-responsive"></a>
+                <div class="portfolio-description">
+                  <h4 class="text-center">NBA Predictions Game</h4>
+                  <h6 class="text-center">React | Node | Express | MongoDB</h6>
+                </div>
+              </div>
+              <div class="visible-xs">
+                <hr>
+              </div>
+              <div class="col-sm-4 portfolio-item"><a data-toggle="modal" data-target="#json-modal" href="#" class="portfolio-link">
+                  <div class="caption">
+                    <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
+                  </div><img src="./static/images/json.png" alt="preview image for JSON explorer app" class="img-responsive"></a>
+                <div class="portfolio-description">
+                  <h4 class="text-center">JSON Navigator</h4>
+                  <h6 class="text-center">React</h6>
+                </div>
+              </div>
+              <div class="visible-xs">
+                <hr>
+              </div>
+              <div class="col-sm-4 portfolio-item"><a data-toggle="modal" data-target="#calendar-modal" href="#" class="portfolio-link">
+                  <div class="caption">
+                    <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
+                  </div><img src="./static/images/calendar.png" alt="preview image for scheduling tool" class="img-responsive"></a>
+                <div class="portfolio-description">
+                  <h4 class="text-center">YouCanBook.me Helper Tool</h4>
+                  <h6 class="text-center">jQuery | Google Calendar API</h6>
+                </div>
+              </div>
+              <div class="visible-xs">
+                <hr>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-5 col-lg-4">
-          <div class="panel panel-primary contact-info">
-            <div class="panel-heading">
-              <div class="panel-title">Contact Info</div>
+      </div>
+      <!-- Modals      -->
+      <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="nba-modal" class="modal fade">
+        <div role="document" class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+              <h4 id="myModalLabel" class="modal-title">NBA Predictions Game</h4>
             </div>
-            <div class="panel-body">
+            <div class="modal-body">
               <div class="row">
-                <div class="col-xs-6">
-                  <dl>
-                    <dt>Phone</dt>
-                    <dd>503.880.5055</dd>
-                  </dl>
+                <div class="col-xs-12 col-lg-8">
+                  <div class="project-modal__image"><img src="./static/images/nba-full.png" alt="preview image for NBA Predictions Game"></div>
+                  <h4 class="text-center"><a href="http://nba.ryland-bell.com" target="_blank">
+                      <button class="btn btn-primary project-modal__button">Live Version&nbsp;&nbsp;
+                        <div class="glyphicon glyphicon-play"></div>
+                      </button></a><a href="https://github.com/rylandbell/nba-predictions" target="_blank">
+                      <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a></h4>
+                  <hr class="hidden-lg">
                 </div>
-                <div class="col-xs-6">
-                  <dl>
-                    <dt>Email</dt>
-                    <dd>ryland.bell@gmail.com</dd>
-                  </dl>
+                <div class="col-xs-12 col-lg-4">
+                  <div class="project-modal__description">
+                    <p><em>Pick the winner of one NBA game per day. Over the course of a month, don’t pick the same team twice. The player with the most correct picks at the end of the month wins.</em></p>
+                    <p>I’ve written a full-stack web app to implement the above game. On the backend, an Express app works with a MongoDB database to track user picks, enforce the each-team-once-per-month rule, and score predictions using game outcome data from nba.com. In the browser, a React/Redux app provides a user-friendly interface for making picks and tracking outcomes over the course of a month.</p>
+                    <table class="table project-modal__table">
+                      <tbody>
+                        <tr>
+                          <td>SKILLS</td>
+                          <td>React/Redux/React-Router, Node/Express, MongoDB, Webpack, Bootstrap</td>
+                        </tr>
+                        <tr>
+                          <td>DATE</td>
+                          <td>Fall 2016</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
-          </div><img src="./static/images/me.jpg" alt="a photograph of the author" class="mugshot hidden-xs hidden-sm">
-          <p class="text-center hidden-xs hidden-sm small">( me. )</p>
+          </div>
+        </div>
+      </div>
+      <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="json-modal" class="modal fade">
+        <div role="document" class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+              <h4 id="myModalLabel" class="modal-title">JSON Navigator</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-xs-12 col-lg-8">
+                  <div class="project-modal__image"><img src="./static/images/json-full.png" alt="preview image for JSON explorer app"></div>
+                  <h4 class="text-center"><a href="http://json-navigator.com" target="_blank">
+                      <button class="btn btn-primary project-modal__button">Live Version&nbsp;&nbsp;
+                        <div class="glyphicon glyphicon-play"></div>
+                      </button></a><a href="https://github.com/rylandbell/json-navigator" target="_blank">
+                      <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a></h4>
+                  <hr class="hidden-lg">
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                  <div class="project-modal__description">
+                    <p>Inspired by the macOS Finder's column view, I made a simple tool that offers a visual way to navigate JSON data. This tool can help with gaining a general sense of a JSON-encoded object's data structure, or with finding the path needed to reference a specific value.</p>
+                    <table class="table project-modal__table">
+                      <tbody>
+                        <tr>
+                          <td>SKILLS</td>
+                          <td>React/Redux, Webpack, JSON, Bootstrap, SCSS, Unit testing (Mocha w/ Expect)</td>
+                        </tr>
+                        <tr>
+                          <td>DATE</td>
+                          <td>Spring 2016</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="calendar-modal" class="modal fade">
+        <div role="document" class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+              <h4 id="myModalLabel" class="modal-title">YouCanBook.me Helper Tool</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-xs-12 col-lg-8">
+                  <div class="project-modal__image"><img src="./static/images/ycbm-full.png" alt="preview image for scheduling tool"></div>
+                  <h4 class="text-center"><a href="http://wasatch.ryland-bell.com/calendar" target="_blank">
+                      <button class="btn btn-primary project-modal__button">Live Version&nbsp;&nbsp;
+                        <div class="glyphicon glyphicon-play"></div>
+                      </button></a><a href="https://github.com/rylandbell/wasatch" target="_blank">
+                      <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a></h4>
+                  <hr class="hidden-lg">
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                  <div class="project-modal__description">
+                    <p>This is a single completed component for an ongoing client project. I was asked to find a good way for clinicians and clients to make appointments with each other. Rather than reinvent the wheel, I opted to encourage use of Google Calendar and YouCanBook.Me, and built a companion app to make the process of creating appointment slots as easy as possible.</p>
+                    <p>My app is designed as a convenient tool to do a few tasks quickly and easily, and is not meant to be a full-featured calendar app. Its primary feature is the ability to &quot;paint&quot; open time periods on the calendar via a draggable element. Once a Google calendar is connected to a paid youcanbook.me account, availability slots will be automatically generated everywhere the clinician has “painted” green on their calendar.</p>
+                    <p>(Note that the linked GitHub repository includes code for the full app, and not just the calendar. The calendar's JavaScript files are found in ~/public/javascripts/calendar.)</p>
+                    <table class="table project-modal__table">
+                      <tbody>
+                        <tr>
+                          <td>SKILLS</td>
+                          <td>Node, Express, jQuery (and the FullCalendar plugin), Google Calendar API, Bootstrap</td>
+                        </tr>
+                        <tr>
+                          <td>DATE</td>
+                          <td>Spring/Summer 2016 2016</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <footer> 
