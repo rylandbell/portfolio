@@ -91,17 +91,35 @@
               <h4 id="myModalLabel" class="modal-title">NBA Predictions Game</h4>
             </div>
             <div class="modal-body">
-              <div class="thumbnail"><a href="http://nba.ryland-bell.com" target="_blank"><img src="./static/images/nba-thumb.png" alt="preview image for NBA Predictions Game"></a></div>
-              <div class="description transparent">
-                <p><em>Pick the winner of one NBA game per day. Over the course of a month, don’t pick the same team twice. The player with the most correct picks at the end of the month wins.</em></p>
-                <p>I’ve written a full-stack web app to implement the above game. On the backend, an Express app works with a MongoDB database to track user picks, enforce the each-team-once-per-month rule, and score predictions using game outcome data from nba.com. In the browser, a React/Redux app provides a user-friendly interface for making picks and tracking outcomes over the course of a month.</p>
-                <p><strong>Skills used:&nbsp;</strong>React/Redux/React-Router, Node/Express, MongoDB, Webpack, Bootstrap</p>
-                <p><strong>Date:&nbsp;</strong>Fall 2016</p>
+              <div class="row">
+                <div class="col-xs-12 col-lg-8">
+                  <div class="project-modal__image"><img src="./static/images/nba-full.png" alt="preview image for NBA Predictions Game"></div>
+                  <h4 class="text-center"><a href="http://nba.ryland-bell.com" target="_blank">
+                      <button class="btn btn-primary">Live Version&nbsp;&nbsp;
+                        <div class="glyphicon glyphicon-play"></div>
+                      </button></a><a href="https://github.com/rylandbell/nba-predictions" target="_blank">
+                      <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a></h4>
+                  <hr class="hidden-lg">
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                  <div class="project-modal__description">
+                    <p><em>Pick the winner of one NBA game per day. Over the course of a month, don’t pick the same team twice. The player with the most correct picks at the end of the month wins.</em></p>
+                    <p>I’ve written a full-stack web app to implement the above game. On the backend, an Express app works with a MongoDB database to track user picks, enforce the each-team-once-per-month rule, and score predictions using game outcome data from nba.com. In the browser, a React/Redux app provides a user-friendly interface for making picks and tracking outcomes over the course of a month.</p>
+                    <table class="table project-modal__table">
+                      <tbody>
+                        <tr>
+                          <td>SKILLS</td>
+                          <td>React/Redux/React-Router, Node/Express, MongoDB, Webpack, Bootstrap</td>
+                        </tr>
+                        <tr>
+                          <td>DATE</td>
+                          <td>Fall 2016</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -114,16 +132,34 @@
               <h4 id="myModalLabel" class="modal-title">JSON Navigator</h4>
             </div>
             <div class="modal-body">
-              <div class="thumbnail"><a href="http://json-navigator.com" target="_blank"><img src="./static/images/json.png" alt="preview image for JSON explorer app"></a></div>
-              <div class="description transparent">
-                <p>Inspired by the macOS Finder's column view, I made a simple tool that offers a visual way to navigate JSON data. This tool can help with gaining a general sense of a JSON-encoded object's data structure, or with finding the path needed to reference a specific value.</p>
-                <p><strong>Skills used:&nbsp;</strong>React/Redux, Webpack, JSON, Bootstrap, SCSS, Unit testing (Mocha w/ Expect)</p>
-                <p><strong>Date:&nbsp;</strong>Spring 2016</p>
+              <div class="row">
+                <div class="col-xs-12 col-lg-8">
+                  <div class="project-modal__image"><img src="./static/images/json-full.png" alt="preview image for JSON explorer app"></div>
+                  <h4 class="text-center"><a href="http://json-navigator.com" target="_blank">
+                      <button class="btn btn-primary">Live Version&nbsp;&nbsp;
+                        <div class="glyphicon glyphicon-play"></div>
+                      </button></a><a href="https://github.com/rylandbell/json-navigator" target="_blank">
+                      <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a></h4>
+                  <hr class="hidden-lg">
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                  <div class="project-modal__description">
+                    <p>Inspired by the macOS Finder's column view, I made a simple tool that offers a visual way to navigate JSON data. This tool can help with gaining a general sense of a JSON-encoded object's data structure, or with finding the path needed to reference a specific value.</p>
+                    <table class="table project-modal__table">
+                      <tbody>
+                        <tr>
+                          <td>SKILLS</td>
+                          <td>React/Redux, Webpack, JSON, Bootstrap, SCSS, Unit testing (Mocha w/ Expect)</td>
+                        </tr>
+                        <tr>
+                          <td>DATE</td>
+                          <td>Spring 2016</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -136,18 +172,36 @@
               <h4 id="myModalLabel" class="modal-title">YouCanBook.me Helper Tool</h4>
             </div>
             <div class="modal-body">
-              <div class="thumbnail"><a href="http://wasatch.ryland-bell.com/calendar" target="_blank"><img src="./static/images/calendar.png" alt="preview image for scheduling tool"></a></div>
-              <div class="description transparent">
-                <p>This is a single completed component for an ongoing client project. I was asked to find a good way for clinicians and clients to make appointments with each other. Rather than reinvent the wheel, I opted to encourage use of Google Calendar and YouCanBook.Me, and built a companion app to make the process of creating appointment slots as easy as possible.</p>
-                <p>My app is designed as a convenient tool to do a few tasks quickly and easily, and is not meant to be a full-featured calendar app. Its primary feature is the ability to &quot;paint&quot; open time periods on the calendar via a draggable element. Once a Google calendar is connected to a paid youcanbook.me account, availability slots will be automatically generated everywhere the clinician has “painted” green on their calendar.</p>
-                <p>(Note that the linked GitHub repository includes code for the full app, and not just the calendar. The calendar's JavaScript files are found in ~/public/javascripts/calendar.)</p>
-                <p><strong>Skills used:&nbsp;</strong>Node, Express, jQuery (and the FullCalendar plugin), Google Calendar API, Bootstrap</p>
-                <p><strong>Date:&nbsp;</strong>Spring/Summer 2016 2016</p>
+              <div class="row">
+                <div class="col-xs-12 col-lg-8">
+                  <div class="project-modal__image"><img src="./static/images/ycbm-full.png" alt="preview image for scheduling tool"></div>
+                  <h4 class="text-center"><a href="http://wasatch.ryland-bell.com/calendar" target="_blank">
+                      <button class="btn btn-primary">Live Version&nbsp;&nbsp;
+                        <div class="glyphicon glyphicon-play"></div>
+                      </button></a><a href="https://github.com/rylandbell/wasatch" target="_blank">
+                      <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a></h4>
+                  <hr class="hidden-lg">
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                  <div class="project-modal__description">
+                    <p>This is a single completed component for an ongoing client project. I was asked to find a good way for clinicians and clients to make appointments with each other. Rather than reinvent the wheel, I opted to encourage use of Google Calendar and YouCanBook.Me, and built a companion app to make the process of creating appointment slots as easy as possible.</p>
+                    <p>My app is designed as a convenient tool to do a few tasks quickly and easily, and is not meant to be a full-featured calendar app. Its primary feature is the ability to &quot;paint&quot; open time periods on the calendar via a draggable element. Once a Google calendar is connected to a paid youcanbook.me account, availability slots will be automatically generated everywhere the clinician has “painted” green on their calendar.</p>
+                    <p>(Note that the linked GitHub repository includes code for the full app, and not just the calendar. The calendar's JavaScript files are found in ~/public/javascripts/calendar.)</p>
+                    <table class="table project-modal__table">
+                      <tbody>
+                        <tr>
+                          <td>SKILLS</td>
+                          <td>Node, Express, jQuery (and the FullCalendar plugin), Google Calendar API, Bootstrap</td>
+                        </tr>
+                        <tr>
+                          <td>DATE</td>
+                          <td>Spring/Summer 2016 2016</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
