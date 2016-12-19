@@ -1,9 +1,15 @@
 /* full-site layout: */
 
-body{
-  background: url(../images/bg_6.jpg);
+/*body{
+  background: url(../images/bg_5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}*/
+body{
+  background: url(../images/denim.png);
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
   background-attachment: fixed;
 }
 
@@ -13,8 +19,9 @@ body{
 }
 
 .shaded-row {
-  background-color: rgba(15,15,15,.65);
+  background-color: rgba(15,15,15,.35);
   margin-top: 30px;
+  border-radius: 8px;
 }
 
 footer {
@@ -177,9 +184,9 @@ dl {
 #portfolio .portfolio-item .portfolio-link .caption {
   border-radius: 5px;
   border: 3px solid;
-  /*background:rgba(20,20,20,.75);*/
+  background:rgba(20,20,20,.75);
   border-color:rgba(78, 93, 108, .3);
-  background-color:rgba(78, 93, 108, .3);
+  /*background-color:rgba(78, 93, 108, .3);*/
   position: absolute;
   width: 100%;
   height: 100%;
@@ -244,6 +251,16 @@ dl {
 }
 
 /*-----------------Unsorted----------------*/
+p, .lead, .nav, button, h4, h5, h6 {
+  font-family: 'Cardo', Georgia, Times, serif;
+}
+
+/*h1, h2, h3 {
+  font-family: 'Allan', Helvetica, Arial, sans-serif;
+}*/
+
+
+
 a:hover {
   text-decoration: none;
 }
