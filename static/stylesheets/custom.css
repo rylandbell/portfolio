@@ -1,0 +1,21 @@
+header {
+  background: #18bc9c;
+  background-size: cover;
+  background-image: url('../images/bg-teal.jpg');
+}
+
+.portfolio-modal .modal-content p{
+  text-align: left;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*section#portfolio {
+  background-size: cover;
+  background-image: url('../img/bg-stripes.jpg');
+}*/
+
+/*section.success {
+  background-size: cover;
+  background-image: url('../img/bg-teal.jpg');
+}*/

@@ -1,22 +1,10 @@
 /* full-site layout: */
 
-/*body{
-  background: url(../images/bg_5.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}*/
-body{
-  background: url(../images/denim.png);
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;*/
-  background-attachment: fixed;
-}
 
-.container-body, .container-navbar {
+/*.container-body, .container-navbar {
   width: 100%;
   max-width: 1230px;
-}
+}*/
 
 .shaded-row {
   background-color: rgba(15,15,15,.35);
@@ -316,4 +304,16 @@ a:hover {
 .table tbody > tr > td:first-child {
   font-weight: bold;
   padding-right: 35px;
+}
+
+header {
+  background: #18bc9c;
+  background-size: cover;
+  background-image: url('../img/bg-teal.jpg');
+}
+
+.portfolio-modal .modal-content p{
+  text-align: left;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
