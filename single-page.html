@@ -58,36 +58,49 @@
       </div>
     </header>
     <!-- Portfolio Grid Section-->
-    <section id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>Projects</h2>
-            <hr class="star-primary">
+    <div id="portfolio">
+      <h2>Projects</h2>
+      <div class="lead">As a self-taught developer, every project has been a valuable chance to apply skills I've learned and to identify the areas where I still need more practice. My hope is that each shows a more capable and mature developer than its predecessors.</div>
+      <div class="row">
+        <!-- Thumbnails trigger modals-->
+        <div class="col-sm-4 portfolio-item"><a data-toggle="modal" data-target="#nba-modal" href="#" class="portfolio-link">
+            <div class="caption">
+              <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
+            </div><img src="./static/images/nba-thumb.png" alt="preview image for NBA Predictions Game" class="img-responsive"></a>
+          <div class="portfolio-description">
+            <h4 class="text-center">NBA Predictions Game</h4>
+            <h6 class="text-center">React | Node | Express | MongoDB</h6>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4 portfolio-item"><a href="#jsonModal" data-toggle="modal" class="portfolio-link">
-              <div class="caption">
-                <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
-              </div><img src="./static/images/me-round.png" alt="" class="img-responsive"></a>
+        <div class="visible-xs">
+          <hr>
+        </div>
+        <div class="col-sm-4 portfolio-item"><a data-toggle="modal" data-target="#json-modal" href="#" class="portfolio-link">
+            <div class="caption">
+              <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
+            </div><img src="./static/images/json.png" alt="preview image for JSON explorer app" class="img-responsive"></a>
+          <div class="portfolio-description">
             <h4 class="text-center">JSON Navigator</h4>
+            <h6 class="text-center">React</h6>
           </div>
-          <div class="col-sm-4 portfolio-item"><a href="#nbaModal" data-toggle="modal" class="portfolio-link">
-              <div class="caption">
-                <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
-              </div><img src="./static/images/me-round.png" alt="" class="img-responsive"></a>
-            <h4 class="text-center">NBA Predictions Game</h4>
+        </div>
+        <div class="visible-xs">
+          <hr>
+        </div>
+        <div class="col-sm-4 portfolio-item"><a data-toggle="modal" data-target="#calendar-modal" href="#" class="portfolio-link">
+            <div class="caption">
+              <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
+            </div><img src="./static/images/calendar.png" alt="preview image for scheduling tool" class="img-responsive"></a>
+          <div class="portfolio-description">
+            <h4 class="text-center">YouCanBook.me Helper Tool</h4>
+            <h6 class="text-center">jQuery | Google Calendar API</h6>
           </div>
-          <div class="col-sm-4 portfolio-item"><a href="#ycbmModal" data-toggle="modal" class="portfolio-link">
-              <div class="caption">
-                <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
-              </div><img src="./static/images/me-round.png" alt="" class="img-responsive"></a>
-            <h4 class="text-center">YouCanBook.me Helper</h4>
-          </div>
+        </div>
+        <div class="visible-xs">
+          <hr>
         </div>
       </div>
-    </section>
+    </div>
     <!-- About Section-->
     <section id="about" class="success">
       <div class="container">
@@ -166,97 +179,131 @@
     </footer>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md"><a href="#page-top" class="btn btn-primary"><i class="fa fa-chevron-up"></i></a></div>
+    <!-- Modals      -->
+    <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="nba-modal" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h4 id="myModalLabel" class="modal-title">NBA Predictions Game</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12 col-lg-8">
+                <div class="project-modal__image"><img src="./static/images/nba-full.png" alt="preview image for NBA Predictions Game"></div>
+                <h4 class="text-center"><a href="http://nba.ryland-bell.com" target="_blank">
+                    <button class="btn btn-primary">Live Version&nbsp;&nbsp;
+                      <div class="glyphicon glyphicon-play"></div>
+                    </button></a><a href="https://github.com/rylandbell/nba-predictions" target="_blank">
+                    <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a></h4>
+                <hr class="hidden-lg">
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <div class="project-modal__description">
+                  <p><em>Pick the winner of one NBA game per day. Over the course of a month, don’t pick the same team twice. The player with the most correct picks at the end of the month wins.</em></p>
+                  <p>I’ve written a full-stack web app to implement the above game. On the backend, an Express app works with a MongoDB database to track user picks, enforce the each-team-once-per-month rule, and score predictions using game outcome data from nba.com. In the browser, a React/Redux app provides a user-friendly interface for making picks and tracking outcomes over the course of a month.</p>
+                  <table class="table project-modal__table">
+                    <tbody>
+                      <tr>
+                        <td>SKILLS</td>
+                        <td>React/Redux/React-Router, Node/Express, MongoDB, Webpack, Bootstrap</td>
+                      </tr>
+                      <tr>
+                        <td>DATE</td>
+                        <td>Fall 2016</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="json-modal" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h4 id="myModalLabel" class="modal-title">JSON Navigator</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12 col-lg-8">
+                <div class="project-modal__image"><img src="./static/images/json-full.png" alt="preview image for JSON explorer app"></div>
+                <h4 class="text-center"><a href="http://json-navigator.com" target="_blank">
+                    <button class="btn btn-primary">Live Version&nbsp;&nbsp;
+                      <div class="glyphicon glyphicon-play"></div>
+                    </button></a><a href="https://github.com/rylandbell/json-navigator" target="_blank">
+                    <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a></h4>
+                <hr class="hidden-lg">
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <div class="project-modal__description">
+                  <p>Inspired by the macOS Finder's column view, I made a simple tool that offers a visual way to navigate JSON data. This tool can help with gaining a general sense of a JSON-encoded object's data structure, or with finding the path needed to reference a specific value.</p>
+                  <table class="table project-modal__table">
+                    <tbody>
+                      <tr>
+                        <td>SKILLS</td>
+                        <td>React/Redux, Webpack, JSON, Bootstrap, SCSS, Unit testing (Mocha w/ Expect)</td>
+                      </tr>
+                      <tr>
+                        <td>DATE</td>
+                        <td>Spring 2016</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="calendar-modal" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h4 id="myModalLabel" class="modal-title">YouCanBook.me Helper Tool</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12 col-lg-8">
+                <div class="project-modal__image"><img src="./static/images/ycbm-full.png" alt="preview image for scheduling tool"></div>
+                <h4 class="text-center"><a href="http://wasatch.ryland-bell.com/calendar" target="_blank">
+                    <button class="btn btn-primary">Live Version&nbsp;&nbsp;
+                      <div class="glyphicon glyphicon-play"></div>
+                    </button></a><a href="https://github.com/rylandbell/wasatch" target="_blank">
+                    <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a></h4>
+                <hr class="hidden-lg">
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <div class="project-modal__description">
+                  <p>This is a single completed component of an ongoing client project. I was asked to find a good way for clinicians and clients to make appointments with each other. Rather than reinvent the wheel, I opted to encourage use of Google Calendar and YouCanBook.Me, and built a companion app to make the process of creating appointment slots as easy as possible.</p>
+                  <p>My app is designed as a convenient tool to do a few tasks quickly and easily, and is not meant to be a full-featured calendar app. Its primary feature is the ability to &quot;paint&quot; open time periods on the calendar via a draggable element. Once a Google calendar is connected to a paid youcanbook.me account, availability slots will be automatically generated everywhere the clinician has “painted” green on their calendar.</p>
+                  <p>(Note that the linked GitHub repository includes code for the full app, and not just the calendar. The calendar's JavaScript files are found in ~/public/javascripts/calendar.)</p>
+                  <table class="table project-modal__table">
+                    <tbody>
+                      <tr>
+                        <td>SKILLS</td>
+                        <td>Node, Express, jQuery (and the FullCalendar plugin), Google Calendar API, Bootstrap</td>
+                      </tr>
+                      <tr>
+                        <td>DATE</td>
+                        <td>Spring/Summer 2016 2016</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Portfolio Modals-->
-    <div id="jsonModal" tabindex="-1" role="dialog" aria-hidden="true" class="portfolio-modal modal fade">
-      <div class="modal-content">
-        <div data-dismiss="modal" class="close-modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <h2>JSON Navigator</h2>
-                <hr class="star-primary"><a href="http://json-navigator.com" target="_blank"><img src="img/portfolio/json-full.png" alt="" class="img-responsive img-centered"></a>
-                <p>Inspired by the macOS Finder's column view, I made a simple tool that offers a visual way to navigate JSON data. This tool can help with gaining a general sense of a JSON-encoded object's data structure, or with finding the path needed to reference a specific value.</p>
-                <p><strong>Skills used:</strong> React/Redux, Webpack, JSON, Bootstrap, SCSS, Unit testing (Mocha w/ Expect; currently only partial coverage)</p>
-                <p><a href="http://json-navigator.com" target="_blank"> Try it out</a></p>
-                <p><a href="https://github.com/rylandbell/json-navigator" target="_blank"> View code on GitHub</a></p>
-                <ul class="list-inline item-details">
-                  <li>Date:<strong>Summer 2016</strong></li>
-                </ul>
-                <button type="button" data-dismiss="modal" class="btn btn-default"><i class="fa fa-times"></i> Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="nbaModal" tabindex="-1" role="dialog" aria-hidden="true" class="portfolio-modal modal fade">
-      <div class="modal-content">
-        <div data-dismiss="modal" class="close-modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <h2>NBA Predictions Game</h2>
-                <hr class="star-primary"><a href="http://nba.ryland-bell.com" target="_blank"><img src="img/portfolio/nba-full.png" alt="" class="img-responsive img-centered"></a>
-                <p>Pick the winner of one NBA game per day. Over the course of a month, don’t pick the same team twice. The player with the most correct picks at the end of the month wins.</p>
-                <p>I’ve written a full-stack web app to implement the above game. On the backend, an Express app works with a MongoDB database to track user picks, enforce the each-team-once-per-month rule, and score predictions using game outcome data from nba.com. In the browser, a React/Redux app provides a user-friendly interface for making picks over the course of a month.</p>
-                <p><strong>Skills used:</strong> React/Redux/React-Router, Node/Express, MongoDB, Webpack, Bootstrap</p>
-                <p><a href="http://nba.ryland-bell.com" target="_blank"> Try it out</a></p>
-                <!--
-                <p>
-                <a href="https://github.com/rylandbell/json-navigator" target="_blank"> View code on GitHub</a>
-                </p>
-                -->
-                <ul class="list-inline item-details">
-                  <li>Client:<strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong></li>
-                  <li>Date:<strong><a href="http://startbootstrap.com">April 2014</a></strong></li>
-                  <li>Service:<strong><a href="http://startbootstrap.com">Web Development</a></strong></li>
-                </ul>
-                <button type="button" data-dismiss="modal" class="btn btn-default"><i class="fa fa-times"></i> Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="ycbmModal" tabindex="-1" role="dialog" aria-hidden="true" class="portfolio-modal modal fade">
-      <div class="modal-content">
-        <div data-dismiss="modal" class="close-modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <h2>YouCanBook.me Helper</h2>
-                <hr class="star-primary"><a href="http://wasatch.ryland-bell.com/calendar" target="_blank"><img src="img/portfolio/ycbm-full.png" alt="" class="img-responsive img-centered"></a>
-                <p>This is a single completed component for an ongoing client project. I was asked to find or create a good way for clinicians and clients to make appointments with each other. Rather than reinvent the wheel, I opted to encourage use of Google Calendar and YouCanBook.Me, and built a companion app to make the process of creating appointment slots as easy as possible.</p>
-                <p>My app is designed as a convenient tool to do a few tasks quickly and easily; it’s not meant to be a full-featured calendar app. Its primary feature is the ability to "paint" open time periods on the calendar via a draggable element. Once a Google calendar is connected to a paid youcanbook.me account, availability slots will be automatically generated everywhere the clinician has “painted” green on their calendar. (Note that the linked GitHub repository includes code for the full app, and not just the calendar. The calendar's JavaScript files are found in ~/public/javascripts/calendar.)</p>
-                <p><strong>Skills used:</strong> Node, Express, jQuery (and the FullCalendar plugin), OAuth 2.0, Google Calendar API, Bootstrap</p>
-                <p><a href="http://wasatch.ryland-bell.com/calendar" target="_blank"> Try it out</a></p>
-                <p><a href="https://github.com/rylandbell/wasatch" target="_blank"> View code on GitHub</a></p>
-                <ul class="list-inline item-details">
-                  <li>Client:<strong><a href="http://startbootstrap.com">Dream River Digital</a></strong></li>
-                  <li>Date:<strong><a href="http://startbootstrap.com">Spring/Summer 2016</a></strong></li>
-                </ul>
-                <button type="button" data-dismiss="modal" class="btn btn-default"><i class="fa fa-times"></i> Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- jQuery-->
     <script src="./static/vendor/jquery-1.11.1.min.js"></script>
     <!-- Bootstrap Core JavaScript-->

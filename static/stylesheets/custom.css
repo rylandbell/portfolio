@@ -4,6 +4,63 @@ header {
   background-image: url('../images/bg-teal.jpg');
 }
 
+.modal-dialog {
+  width: 90%;
+  max-width: 1250px;
+}
+
+@media (max-width: 991px) {
+  .modal-dialog {
+    width: 98%;
+  }
+}
+
+.project-modal__description {
+  background-color:rgba(25,25,25,0.4);
+  border-radius: 5px;
+  padding: 12px;
+  margin: 0;
+}
+
+.project-modal__description h3 {
+  margin-top: 0;
+}
+
+.project-modal__description p {
+  font-size: 16px;
+}
+
+.project-modal__image {
+  box-shadow: 0 0 0.5em 0.2em #333;
+  border: 1px solid #333;
+}
+
+.project-modal__image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project-modal__button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project-modal__button img {
+  position: relative;
+  top: -2px;
+  max-height: 20px;
+  max-width: 20px;
+}
+
+.table tbody > tr > td {
+  border-bottom: 1px solid grey;
+}
+
+.table tbody > tr > td:first-child {
+  font-weight: bold;
+  padding-right: 35px;
+}
+
 .portfolio-modal .modal-content p{
   text-align: left;
   -webkit-box-shadow: none;
