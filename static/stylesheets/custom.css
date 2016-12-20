@@ -1,14 +1,97 @@
-
-header {
-  background: #18bc9c;
-  background-size: cover;
-  background-image: url('../images/bg-teal.jpg');
-}
+/*Layout tweaks:*/
 
 #portfolio {
   padding-left: 40px;
   padding-right: 40px;
 }
+
+#about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .footer-above {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+footer .footer-col {
+  margin-bottom: 0;
+}
+
+#contact > div > div > div > div:nth-child(3) > ul > li > a {
+  margin-top: 0;
+  position: relative;
+  top: -10px;
+}
+
+/*Color & Images:*/
+
+header {
+  background: #2B3E50;
+  background-size: cover;
+  background-image: url('../images/bg-vignette.jpg');
+}
+
+#portfolio {
+  /*background-image: url('../images/paper.png');*/
+  background-color: #bbbbbb;
+  color: #222222;
+}
+
+#about {
+  background-color: #2B3E50;
+  /*background-size: cover;
+  background-image: url('../images/bg_5.jpg');*/
+}
+
+footer .footer-above, .footer-below {
+  background-color: #4e5d6c;
+}
+
+footer a {
+  color: white;
+}
+
+.btn {
+  border-color: rgba(0,0,0,0);
+  background-color: #DF691A;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #b15315;
+  border-color: rgba(0,0,0,0);
+  color: #ffffff;
+}
+
+/*Fonts & Text:*/
+
+p, .intro-text, .name, .nav, button, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cardo', Georgia, Times, serif;
+}
+
+.navbar-brand {
+  font-family: 'Cardo', Georgia, Times, serif;
+}
+
+header .intro-text .name {
+  font-family: 'Cardo', Georgia, Times, serif;
+}
+
+.lead {
+  font-family: 'Cardo', Georgia, Times, serif;
+}
+
+h2 {
+  font-family: 'Allan', Georgia, Times, serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*Project Modals:*/
 
 .modal-dialog {
   width: 90%;
@@ -141,12 +224,6 @@ header {
     margin: 0 0 30px;
   }
 }
-
-/*.img-responsive {
-  background-color:rgba(78, 93, 108, .3);
-  border-color:rgba(78, 93, 108, .3);
-}
-*/
 
 .portfolio-description {
   position: relative;
