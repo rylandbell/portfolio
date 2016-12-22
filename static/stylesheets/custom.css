@@ -4,7 +4,7 @@
     position: absolute;
     top: 30%;
     left: 50%;
-    margin-left: -195px;
+    margin-left: -218px;
   }
 }
 
@@ -13,7 +13,7 @@
     position: absolute;
     top: 30%;
     left: 50%;
-    margin-left: -164px;
+    margin-left: -166px;
   }
 }
 
@@ -63,8 +63,9 @@ header {
 
 #portfolio {
   background-color: #2B3E50;
+  background-position: -40px 60px;
   /*background-size: cover;*/
-  /*background-image: url('../images/bg-vignette.jpg');*/
+  background-image: url('../images/graphy4.png');
 }
 
 footer .footer-above, .footer-below {
@@ -89,18 +90,28 @@ footer a {
 
 /*Typography:*/
 
-.intro-text, .name, .nav, .navbar-brand, h3, h4, h5, h6 {
-  font-family: 'Kreon', Georgia, Times, serif;
-}
-
-h1, h2, header .intro-text>.name {
+header .intro-text>.name {
   font-family: 'Fredericka the Great', Georgia, Times, serif;
   text-transform: none;
   font-weight: normal;
 }
 
-.lead, p {
-  font-family: 'Kreon', Georgia, Times, serif;
+
+.intro-text, .name, .nav, .navbar-brand, h2, h3, h4, h5 {
+  font-family: 'Quattrocento', Georgia, Times, serif;
+}
+
+h2 {
+  text-transform: none;
+  text-shadow: 2px 2px 4px rgba(50, 50, 50, .75);
+}
+
+.nav > li > a {
+  font-size: 14px;
+}
+
+.lead, p, h6 {
+  font-family: 'Quattrocento Sans', Georgia, Times, serif;
 }
 
 a:hover {
@@ -111,13 +122,12 @@ a:hover {
   text-transform: none;
 }
 
-.name {
+header .intro-text .name {
   font-size: 80px;
 }
 
-.skills {
-  /*font-weight: bold;*/
-  font-size: 32px;
+header .intro-text>.skills {
+  font-size: 28px;
 }
 
 @media(max-width: 768px) {

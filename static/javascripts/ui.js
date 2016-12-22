@@ -5,6 +5,6 @@ $(document).ready(function () {
     $('.down-arrow').toggleClass('animated rubberBand')
   }
 
-  setInterval(animateArrow,1500);
+  setInterval(animateArrow,1000);
 });
 
