@@ -1,8 +1,28 @@
 /*Layout tweaks:*/
+@media(min-width: 769px) {
+  .intro-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -195px;
+  }
+}
+
+@media(max-width: 768px) {
+  .intro-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -164px;
+  }
+}
 
 #portfolio {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
+}
+
+#portfolio h2 {
+  margin-bottom: 20px;
 }
 
 #about {
@@ -29,20 +49,22 @@ footer .footer-col {
 
 header {
   background: #2B3E50;
-  background-size: cover;
-  background-image: url('../images/bg-vignette.jpg');
+  /*background-size: cover;*/
+  background-image: url('../images/ignasi_pattern_s.png');
+  color: #222222;
+  min-height: 95vh;
 }
 
-#portfolio {
-  /*background-image: url('../images/paper.png');*/
+#about {
+  background-image: url('../images/paper.png');
   background-color: #bbbbbb;
   color: #222222;
 }
 
-#about {
+#portfolio {
   background-color: #2B3E50;
-  /*background-size: cover;
-  background-image: url('../images/bg_5.jpg');*/
+  /*background-size: cover;*/
+  /*background-image: url('../images/bg-vignette.jpg');*/
 }
 
 footer .footer-above, .footer-below {
@@ -65,30 +87,50 @@ footer a {
   color: #ffffff;
 }
 
-/*Fonts & Text:*/
+/*Typography:*/
 
-p, .intro-text, .name, .nav, button, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cardo', Georgia, Times, serif;
+.intro-text, .name, .nav, .navbar-brand, h3, h4, h5, h6 {
+  font-family: 'Kreon', Georgia, Times, serif;
 }
 
-.navbar-brand {
-  font-family: 'Cardo', Georgia, Times, serif;
+h1, h2, header .intro-text>.name {
+  font-family: 'Fredericka the Great', Georgia, Times, serif;
+  text-transform: none;
+  font-weight: normal;
 }
 
-header .intro-text .name {
-  font-family: 'Cardo', Georgia, Times, serif;
-}
-
-.lead {
-  font-family: 'Cardo', Georgia, Times, serif;
-}
-
-h2 {
-  font-family: 'Allan', Georgia, Times, serif;
+.lead, p {
+  font-family: 'Kreon', Georgia, Times, serif;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+.modal-title {
+  text-transform: none;
+}
+
+.name {
+  font-size: 80px;
+}
+
+.skills {
+  /*font-weight: bold;*/
+  font-size: 32px;
+}
+
+@media(max-width: 768px) {
+  header .intro-text .name {
+    font-size: 60px;
+  }
+  header .intro-text .skills {
+    font-size: 24px;
+  }
+}
+
+header, header a, header a:active, header a:hover, header a.active, header a:focus {
+  color: #39444e;
 }
 
 /*Project Modals:*/
@@ -177,7 +219,7 @@ a:hover {
 #portfolio .portfolio-item .portfolio-link .caption {
   border-radius: 5px;
   border: 3px solid;
-  background:rgba(20,20,20,.75);
+  background:rgba(17,24,31,.85);
   border-color:rgba(78, 93, 108, .3);
   /*background-color:rgba(78, 93, 108, .3);*/
   position: absolute;
@@ -202,8 +244,11 @@ a:hover {
   text-align: center;
   top: 50%;
   margin-top: -12px;
-  color: white;
+  color: #DF691A;
+}
 
+#portfolio .portfolio-item .portfolio-link .caption .caption-content .caption-text {
+  margin-bottom: 30px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
@@ -237,3 +282,12 @@ a:hover {
   font-size: 1.2em;
 }
 
+/*Misc:*/
+
+.down-arrow {
+  position: absolute;
+  bottom: 55px;
+  font-size: 30px;
+  left: 50%;
+  margin-left: -15px;
+}
