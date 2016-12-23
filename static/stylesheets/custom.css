@@ -15,10 +15,15 @@
     left: 50%;
     margin-left: -166px;
   }
+
+  .navbar {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 
 #portfolio {
-  padding: 40px;
+  padding: 40px 40px 67px 40px;
 }
 
 #portfolio h2 {
@@ -114,6 +119,15 @@ h2 {
   font-family: 'Quattrocento Sans', Georgia, Times, serif;
 }
 
+h6 {
+  text-transform: none;
+  font-size: 16px;
+}
+
+.navbar-brand {
+  text-transform: none;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -141,6 +155,10 @@ header .intro-text>.skills {
 
 header, header a, header a:active, header a:hover, header a.active, header a:focus {
   color: #39444e;
+}
+
+#portfolio a {
+  color: rgb(235,235,235);
 }
 
 /*Project Modals:*/
@@ -296,8 +314,13 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
 
 .down-arrow {
   position: absolute;
-  bottom: 55px;
+  bottom: 25px;
   font-size: 30px;
   left: 50%;
   margin-left: -15px;
+}
+
+#portfolio, header {
+  position: relative;
+  /*padding-bottom: 0;*/
 }
