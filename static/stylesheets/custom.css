@@ -61,7 +61,7 @@ header {
 }
 
 #about {
-  background-image: url('../images/paper.png');
+  background-image: url('../images/linedpaper.png');
   background-color: #bbbbbb;
   color: #222222;
 }
@@ -71,6 +71,11 @@ header {
   background-position: -40px 60px;
   /*background-size: cover;*/
   background-image: url('../images/graphy4.png');
+}
+
+#skills {
+  /*background-image: url('../images/linedpaper.png');*/
+  background-color: #333;
 }
 
 footer .footer-above, .footer-below {
@@ -324,3 +329,12 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
   position: relative;
   /*padding-bottom: 0;*/
 }
+
+.mugshot {
+  margin-left: 20px;
+  float: right;
+}
+
+/*.bio p {
+  text-align: justify;
+}*/
