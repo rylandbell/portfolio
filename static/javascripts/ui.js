@@ -1,10 +1,17 @@
 $(document).ready(function () {
+  var arrowWiggles = 0;
 
   //animated down-arrow in header:
   function animateArrow(){
     $('.down-arrow')
       .first()
       .toggleClass('animated rubberBand');
+
+    //only wiggle 3x:
+    arrowWiggles++;
+    if(arrowWiggles > 5) {
+      clearInterval(arrowInterval);
+    }
   }
 
   $(window).scroll(function() {
@@ -16,6 +23,6 @@ $(document).ready(function () {
       }
   });
 
-  setInterval(animateArrow,1000);
+  var arrowInterval = setInterval(animateArrow,1000);
 });
 
