@@ -7,7 +7,7 @@
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            scrollTop: ($($anchor.attr('href')).offset().top - 0)
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
@@ -19,16 +19,18 @@
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
+    $('.navbar-collapse ul li a').click(function(){
+        setTimeout(function(){
             $('.navbar-toggle:visible').click();
+        }, 1250)
     });
 
     // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
+    // $('#mainNav').affix({
+    //     offset: {
+    //         top: 100
+    //     }
+    // })
 
     // Floating label headings for the contact form
     $(function() {

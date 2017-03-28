@@ -32,8 +32,9 @@
         <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="hidden"><a href="#page-top"></a></li>
-            <li class="page-scroll"><a href="#portfolio">Projects</a></li>
             <li class="page-scroll"><a href="#about">About</a></li>
+            <li class="page-scroll"><a href="#skills">Skills</a></li>
+            <li class="page-scroll"><a href="#portfolio">Projects</a></li>
             <li class="page-scroll"><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -46,17 +47,58 @@
       <div class="intro-text">
         <div class="name">Ryland Bell</div><span class="skills">Web Application Development</span>
       </div>
-      <div class="down-arrow page-scroll"><a href="#portfolio">
+      <div class="down-arrow page-scroll"><a href="#about">
           <div class="glyphicon glyphicon-chevron-down"></div></a></div>
     </header>
-    <!-- Portfolio Grid Section-->
+    <!-- About Section-->
+    <section id="about" class="success">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-title">About Me</h2>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-xs-12 col-lg-10 col-lg-offset-1 text-justify">
+            <div class="mugshot"><img src="./static/images/me-round.png" alt="a photograph of the author" class="center-block"></div>
+            <div class="lead">Hi, I’m Ryland! I’m a self-taught web application developer, and created this site to share some of my best work with you.</div>
+            <div class="lead">I spent most of the past decade studying and teaching college-level math. Looking for a new challenge, I found that coding offered me the perfect chance to build on my existing strengths while allowing for continual learning and growth. I view web development as a craft to be developed over time, and have been devoting much energy to improving the quality of my code. I strive to write applications that provide a rich and intuitive user experience, with a maintainable and secure codebase.</div>
+            <div class="lead">I’m currently looking for employment and freelance projects, and would love to hear from you if you think you might be interested in working together.            </div>
+          </div>
+        </div>
+        <div class="col-lg-10 col-lg-offset-1 text-center"><a href="#" class="btn btn-lg btn-outline"><i class="fa fa-download"></i> Download PDF Resume</a></div>
+        <div class="down-arrow page-scroll"><a href="#skills">
+            <div class="glyphicon glyphicon-chevron-down"></div></a></div>
+      </div>
+    </section>
+    <!-- Skills Section-->
+    <section id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-title">Skills</h2>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="lead">With a bottomless choice of technologies to explore, I’ve made the strategic decision to focus on the JavaScript ecosystem so far. I have been working hard to develop strong skills with vanilla JavaScript while also gaining a solid understanding of a representative piece of most modern web development technologies.</div>
+            <p><strong>Languages: </strong>JavaScript, HTML 5, CSS 3 </p>
+            <p><strong>Frameworks and Libraries: </strong>React, Redux, Node, Express, MongoDB, jQuery, Bootstrap</p>
+            <p><strong>Other tools: </strong>Git, Sass, Webpack, Mocha, Grunt, Passport, JWT, R, Excel, LaTeX</p>
+          </div>
+        </div>
+        <div class="down-arrow page-scroll"><a href="#portfolio">
+            <div class="glyphicon glyphicon-chevron-down"></div></a></div>
+      </div>
+    </section>
+    <!-- Projects Section-->
     <section id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-lg-10 col-lg-offset-1">
             <div class="row">
               <div class="col-lg-12 text-center">
-                <h2>Projects</h2>
+                <h2 class="section-title">Projects</h2>
               </div>
             </div>
             <div class="row">
@@ -105,34 +147,6 @@
             </div>
           </div>
         </div>
-        <div class="down-arrow page-scroll"><a href="#about">
-            <div class="glyphicon glyphicon-chevron-down"></div></a></div>
-      </div>
-    </section>
-    <!-- Skills Section-->
-    <!-- About Section-->
-    <section id="about" class="success">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>About Me</h2>
-          </div>
-        </div><br>
-        <div class="row">
-          <div class="col-xs-12 col-lg-10 col-lg-offset-1 text-justify">
-            <div class="mugshot"><img src="./static/images/me-round.png" alt="a photograph of the author" class="center-block"></div>
-            <p>Hi, I’m Ryland! I’m a self-taught web application developer, and created this site to share some of my best work with you.</p>
-            <p>I spent most of the past decade studying and teaching college-level math. Looking for a new challenge, I found that coding offered me the perfect chance to build on my existing strengths while allowing for continual learning and growth. I view web development as a craft to be developed over time, and have been devoting much energy to improving the quality of my code. I strive to write applications that provide a rich and intuitive user experience, with a maintainable and secure codebase.</p>
-            <p>I’m currently looking for employment and freelance projects, and would love to hear from you if you think you might be interested in working together.</p>
-            <hr>
-            <h3 class="text-center">Skills</h3>
-            <p>With a bottomless choice of technologies to explore, I’ve made the strategic decision to focus on the JavaScript ecosystem so far. I have been working hard to develop strong skills with vanilla JavaScript while also gaining a solid understanding of a representative piece of most modern web development technologies.</p>
-            <p><strong>Languages: </strong>JavaScript, HTML 5, CSS 3 </p>
-            <p><strong>Frameworks and Libraries: </strong>React, Redux, Node, Express, MongoDB, jQuery, Bootstrap</p>
-            <p><strong>Other tools: </strong>Git, Sass, Webpack, Mocha, Grunt, Passport, JWT, R, Excel, LaTeX</p>
-          </div>
-        </div>
-        <div class="col-lg-10 col-lg-offset-1 text-center"><a href="#" class="btn btn-lg btn-outline"><i class="fa fa-download"></i> Download PDF Resume</a></div>
       </div>
     </section>
     <!-- Footer-->
@@ -274,7 +288,7 @@
                       </tr>
                       <tr>
                         <td>DATE</td>
-                        <td>Spring/Summer 2016 2016</td>
+                        <td>Spring/Summer 2016</td>
                       </tr>
                     </tbody>
                   </table>

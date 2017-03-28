@@ -1,28 +1,41 @@
 $(document).ready(function () {
-  var arrowWiggles = 0;
 
-  //animated down-arrow in header:
-  function animateArrow(){
-    $('.down-arrow')
-      .first()
-      .toggleClass('animated rubberBand');
+  setTimeout(function(){
+    $('ul.list-inline.animated.bounceInUp.hidden').removeClass('hidden');
+  },700);
 
-    //only wiggle 3x:
-    arrowWiggles++;
-    if(arrowWiggles > 5) {
-      clearInterval(arrowInterval);
-    }
-  }
+  setTimeout(function(){
+    $('hr.fancy-hr.animated.fadeIn.hidden').removeClass('hidden');
+  },300)
 
+  // trigger card flip on user click or scrolling down the page
+  $('.door').on('click', flipTheCard);
   $(window).scroll(function() {
       var height = $(window).scrollTop();
-      if(height  > 100) {
-        $('a.navbar-brand')
-          .removeClass('hidden')
-          .addClass('animated fadeIn');
+      if(height  > 120) {
+        flipTheCard();
       }
   });
 
-  var arrowInterval = setInterval(animateArrow,1000);
+  function flipTheCard() {
+    var $door = $('.door');
+
+    //immediate transitions:
+    $door.removeClass('flipped')
+    $('.inner-door').css('background-color','rgb(235,235,235)');
+    
+    //transitions delayed 400ms:
+    setTimeout(function(){
+      $door.css('transition','1s')
+        .addClass('no-shadow');
+      $('body').css('background-color','#d8dadc');
+    }, 400);
+    
+    //transitions delayed 600ms:
+    setTimeout(function(){
+      $('.nav-links').removeClass('hidden');
+      $('.fancy-hr').removeClass('hidden');
+    }, 600);
+  }
 });
 
