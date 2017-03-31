@@ -300,12 +300,8 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
 
 .mugshot {
   margin: 15px 0 15px 15px;
-  float: right;
-  width: 200px;
-}
-
-.mugshot {
-  width: 200px; height: auto;
+  width: 220px; 
+  height: auto;
   float: right;
   border-radius: 50%;
   -webkit-shape-outside:circle();
@@ -498,6 +494,11 @@ hr.fancy-hr:after {
   .col-right-sm {
     padding-left: 22px;
   }
+}
+
+.btn-resume {
+  margin-top: 15px;
+  min-width: 130px;
 }
 
 /*!
