@@ -37,5 +37,18 @@ $(document).ready(function () {
       $('.fancy-hr').removeClass('hidden');
     }, 600);
   }
+
+  //initialize Slick:
+  // $('.slick-carousel').slick({
+  //   dots: true
+  // });
+
+  $('.btn-modal').on('click', function(){
+    setTimeout(function(){
+      $('.slick-carousel').slick({
+        dots: true
+      });
+    },251);
+  });
 });
 

@@ -1,5 +1,5 @@
 * {
-  transition: .5s;
+  transition: color .5s background-color .5s;
 }
 /*Layout tweaks:*/
 @media(min-width: 769px) {
@@ -109,7 +109,7 @@ footer a {
   color: #ffffff;
 }
 
-.btn:hover {
+.btn:hover, .btn:active, .btn:focus, .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:hover {
   background-color: #b15315;
   border-color: rgba(0,0,0,0);
   color: #ffffff;
@@ -137,7 +137,7 @@ header .intro-text>.name {
   }
 }
 
-.intro-text, .name, .nav, .navbar-brand, h2, h3, h4, h5 {
+.intro-text, .name, .nav, .navbar-brand, h2, h4, h5 {
   font-family: 'Quattrocento', Georgia, Times, serif;
 }
 
@@ -154,7 +154,7 @@ h4 {
   font-size: 14px;
 }
 
-.lead, p, h6 {
+.lead, p, li, h6 {
   font-family: 'Quattrocento Sans', Georgia, Times, serif;
 }
 
@@ -173,6 +173,14 @@ a:hover, a:focus {
 
 .modal-title {
   text-transform: none;
+}
+
+.modal, .modal-dialog, .modal-body, .modal-content {
+  background-color: rgba(170,170,170,0.45);
+}
+
+.modal-body {
+  /*background-color: rgba(0,0,0,0);*/
 }
 
 @media(min-width: 769px) {
@@ -221,51 +229,14 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
 /*Project Modals:*/
 
 .modal-dialog {
-  width: 90%;
-  max-width: 1300px;
+  width: 85%;
+  max-width: 1200px;
 }
 
 @media (max-width: 991px) {
   .modal-dialog {
     width: 98%;
   }
-}
-
-.project-modal__description {
-  background-color:rgba(25,25,25,0.4);
-  border-radius: 5px;
-  padding: 12px;
-  margin: 0;
-}
-
-.project-modal__description h3 {
-  margin-top: 0;
-}
-
-.project-modal__description p {
-  font-size: 16px;
-}
-
-.project-modal__image {
-  box-shadow: 0 0 0.5em 0.2em #333;
-  border: 1px solid #333;
-}
-
-.project-modal__image img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.project-modal__button {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.project-modal__button img {
-  position: relative;
-  top: -2px;
-  max-height: 20px;
-  max-width: 20px;
 }
 
 .table tbody > tr > td {
@@ -277,12 +248,6 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
   padding-right: 35px;
 }
 
-.portfolio-modal .modal-content p{
-  text-align: left;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
 /* Project Thumbnails: */
 
 
@@ -290,6 +255,18 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+}
+
+.project-modal__button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.project-modal__button img {
+    position: relative;
+    top: -2px;
+    max-height: 20px;
+    max-width: 20px;
 }
 
 /*Misc:*/
@@ -499,6 +476,47 @@ hr.fancy-hr:after {
 .btn-resume {
   margin-top: 15px;
   min-width: 130px;
+}
+
+/*Carousel Modal:*/
+.modal-body {
+  min-height: 500px;
+}
+
+.slick-carousel {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.slick-carousel * {
+  color: black;
+}
+
+.slick-next {
+  padding-left: 5px;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-slide img {
+  margin-bottom: 20px;
+}
+
+.slick-slide p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+p.slide-title {
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
 /*!
