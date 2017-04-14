@@ -1,18 +1,12 @@
 * {
   transition: color .5s background-color .5s;
 }
+
 /*Layout tweaks:*/
 @media(min-width: 769px) {
   .container-fluid {
     padding-left: 30px;
     padding-right: 30px;
-  }
-}
-
-@media(max-width: 768px) {
-  .navbar {
-    padding-top: 8px;
-    padding-bottom: 8px;
   }
 }
 
@@ -64,12 +58,7 @@ footer .footer-col {
 /*Color & Images:*/
 body {
   background-attachment: fixed;
-  /*background-color: rgb(235,235,235);*/
   background-color: #d8dadc;
-}
-
-.header-container {
-  width: 100%;
 }
 
 header {
@@ -86,12 +75,6 @@ header {
 
 #portfolio {
   background-color: rgb(235,235,235);
-  color: #222222;
-}
-
-#skills {
-  background-image: url('../images/linedpaper.png');
-  background-color: #bbbbbb;
   color: #222222;
 }
 
@@ -137,21 +120,12 @@ header .intro-text>.name {
   }
 }
 
-.intro-text, .name, .nav, .navbar-brand, h2, h4, h5 {
+.intro-text, .name, h2, h4, h5 {
   font-family: 'Quattrocento', Georgia, Times, serif;
-}
-
-.section-title {
-  text-transform: none;
-  text-shadow: 2px 2px 4px rgba(50, 50, 50, .75);
 }
 
 h4 {
   text-transform: none;
-}
-
-.nav > li > a {
-  font-size: 14px;
 }
 
 .lead, p, li, h6 {
@@ -163,10 +137,6 @@ h6 {
   font-size: 16px;
 }
 
-.navbar-brand {
-  text-transform: none;
-}
-
 a:hover, a:focus {
   text-decoration: none;
 }
@@ -175,12 +145,8 @@ a:hover, a:focus {
   text-transform: none;
 }
 
-.modal, .modal-dialog, .modal-body, .modal-content {
-  background-color: rgba(170,170,170,0.45);
-}
-
-.modal-body {
-  /*background-color: rgba(0,0,0,0);*/
+.modal-content {
+  background-color: rgba(170,170,170,0.85);
 }
 
 @media(min-width: 769px) {
@@ -203,10 +169,6 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
   color: #39444e;
 }
 
-#skills, #skills a {
-  color: #39444e;
-}
-
 #about a {
   color: rgb(235,235,235);
 }
@@ -226,19 +188,6 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
   }
 }
 
-/*Project Modals:*/
-
-.modal-dialog {
-  width: 85%;
-  max-width: 1200px;
-}
-
-@media (max-width: 991px) {
-  .modal-dialog {
-    width: 98%;
-  }
-}
-
 .table tbody > tr > td {
   border-bottom: 1px solid grey;
 }
@@ -248,8 +197,7 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
   padding-right: 35px;
 }
 
-/* Project Thumbnails: */
-
+/* Project Thumbnails & Buttons: */
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -257,12 +205,12 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
   }
 }
 
-.project-modal__button {
+.project__button {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.project-modal__button img {
+.project__button img {
     position: relative;
     top: -2px;
     max-height: 20px;
@@ -287,6 +235,7 @@ header, header a, header a:active, header a:hover, header a.active, header a:foc
 
 h3 {
   text-transform: none;
+  font-weight: normal;
 }
 
 .drop-shadow {
@@ -303,25 +252,12 @@ hr.section-hr {
   background-color: #dad5d5;
 }
 
-hr.small-hr {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0;
-  border-top: 3px double #8c8b8b;
-  width: 130px;
-}
-
 .intro-text {
   padding: 0px 40px 40px 40px;
 }
 
 .intro-text * {
   color: #2b3e50;
-}
-
-.glyphicon-chevron-down {
-  font-size: 24px;
-  font-weight: normal;
 }
 
 #portfolio .button-set {
@@ -361,19 +297,19 @@ td:nth-child(2) {
   }
 }
 
-.surprised {
+.splash-img {
   width: 250px;
   margin-top: 20px;
 }
 
-.inner-door {
+.inner-card {
   background-color: rgb(0,0,0,1);
   transition: 0.8s;
   padding-top: 30px;
   padding-bottom: 20px;
 }
 
-.door {
+.card {
   border-radius: 10px;
   -webkit-box-shadow: 6px 9px 10px 0px #555;
   -moz-box-shadow: 6px 9px 10px 0px #555;
@@ -384,7 +320,7 @@ td:nth-child(2) {
 }
 
 @media (max-width: 768px) {
-  .door {
+  .card {
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -418,11 +354,6 @@ td:nth-child(2) {
   height: 50px;
 }
 
-.fancy-hr-container {
-  height: 40px;
-  border: 1px solid rgba(0,0,0,0);
-}
-
 .nav-links {
   padding-top: 10px;
 }
@@ -433,6 +364,11 @@ td:nth-child(2) {
 
 .nav-links * {
   font-size: 18px;
+}
+
+.fancy-hr-container {
+  height: 40px;
+  border: 1px solid rgba(0,0,0,0);
 }
 
 hr.fancy-hr {
@@ -479,6 +415,17 @@ hr.fancy-hr:after {
 }
 
 /*Carousel Modal:*/
+.modal-dialog {
+  width: 85%;
+  max-width: 1200px;
+}
+
+@media (max-width: 991px) {
+  .modal-dialog {
+    width: 98%;
+  }
+}
+
 .modal-body {
   min-height: 500px;
 }
