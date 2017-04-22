@@ -20,17 +20,18 @@
     <div class="container-body">
       <!-- Header-->
       <header>
-        <div class="card center-this no-shadow">
-          <div class="inner-card"><img src="static/images/circle.png" class="splash-img">
+        <div class="card no-shadow">
+          <div class="intro-card"><img src="static/images/circle.png">
             <div class="intro-text">
-              <div class="name">ryland.bell</div>
-              <div class="skills">Web Application Development</div>
+              <h1>ryland.bell</h1>
+              <div class="subtitle">Web Application Development</div>
               <div class="fancy-hr-container">
                 <hr class="fancy-hr animated fadeIn hidden-xs hidden">
                 <hr class="fancy-hr visible-xs">
               </div>
-              <div class="arrow-container">
+              <div class="nav-container">
                 <div class="nav-links page-scroll">
+                  <!--only do bounce-in effect on SM and larger-->
                   <ul class="list-inline animated bounceInUp hidden-xs hidden">
                     <li><a href="#portfolio"><strong>PROJECTS</strong></a></li>
                     <li><a href="#about"><strong>ABOUT</strong></a></li>
@@ -48,7 +49,7 @@
         </div>
       </header>
       <!-- Projects Section-->
-      <section id="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
@@ -164,7 +165,7 @@
                   <button class="btn btn-primary btn-resume">Resume&nbsp;&nbsp;<i class="glyphicon glyphicon-download-alt"></i></button></a></div>
             </div>
             <div class="col-xs-12 col-md-6 col-right-md">
-              <div class="grey-box drop-shadow skills-box">
+              <div class="skills-box drop-shadow">
                 <h3>Skills</h3>
                 <p class="reading-text">I’ve been focusing on the JavaScript ecosystem, working hard to develop strong skills with vanilla JavaScript while also gaining a solid understanding of many modern web development technologies. I'm excited to keep learning, whether that means learning new tools or improving with the ones I've already met.</p>
                 <table class="table skills-table">
@@ -190,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="row hidden-lg hidden-md resume-btn-mobile">
+          <div class="row hidden-lg hidden-md btn-resume">
             <div class="col-xs-12">   
               <div class="text-center"><a href="./static/pdfs/Ryland_Bell_Resume.pdf">
                   <button class="btn btn-primary">Resume&nbsp;&nbsp;<i class="glyphicon glyphicon-download-alt"></i></button></a></div>
