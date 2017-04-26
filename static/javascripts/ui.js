@@ -28,6 +28,6 @@ $(document).ready(function () {
   });
 
   //wake up pigeon hoops as soon as portfolio loads:
-  // $.ajax('http://nba.ryland-bell.com/js/validation.js');
+  $.ajax('http://nba.ryland-bell.com/api/userMonth/2016-10');
 });
 
