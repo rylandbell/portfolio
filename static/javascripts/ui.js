@@ -22,7 +22,7 @@ $(document).ready(function () {
     setTimeout(function(){
       $('.slick-carousel').slick({
         dots: true,
-        lazyLoad: 'ondemand'
+        // lazyLoad: 'ondemand'
       });
     },251);
   });
