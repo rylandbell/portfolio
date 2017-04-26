@@ -21,9 +21,13 @@ $(document).ready(function () {
   $('.btn-modal').on('click', function(){
     setTimeout(function(){
       $('.slick-carousel').slick({
-        dots: true
+        dots: true,
+        lazyLoad: 'ondemand'
       });
     },251);
   });
+
+  //wake up pigeon hoops as soon as portfolio loads:
+  // $.ajax('http://nba.ryland-bell.com/js/validation.js');
 });
 
