@@ -27,7 +27,7 @@ $(document).ready(function () {
     },251);
   });
 
-  //wake up pigeon hoops as soon as portfolio loads:
+  //send a dummy request to nba.ryland-bell.com to wake up its Heroku server as soon as this page loads loads:
   $.ajax('http://nba.ryland-bell.com/api/userMonth/2016-10');
 });
 
