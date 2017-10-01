@@ -9,8 +9,6 @@
     <title>Ryland Bell - Web Development</title>
     <!-- Vendor CSS-->
     <link rel="stylesheet" href="./static/vendor/bootstrap/css/superhero.bootstrap.min.css">
-    <link rel="stylesheet" href="./static/vendor/slick/slick.css">
-    <link rel="stylesheet" href="./static/vendor/slick/slick-theme.css">
     <!-- Custom Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento:400,700|Quattrocento+Sans|Special+Elite" type="text/css">
     <!-- Custom CSS-->
@@ -149,12 +147,10 @@
                 </div>
               </div><br class="visible-xs">
               <div class="row project-row">
-                <div class="col-sm-6 portfolio-item col-left-sm"><img src="./static/images/calendar-wide.png" alt="preview image for scheduling tool" class="img-responsive drop-shadow">
-                  <noscript><img src="./static/images/calendar-wide.png" alt="preview image for scheduling tool" class="img-responsive drop-shadow"></noscript>
-                  <h4 class="text-center button-set hidden-xs">
-                    <button data-toggle="modal" data-target=".carousel-modal" class="btn btn-default btn-modal">Slideshow&nbsp;&nbsp;
-                      <div class="glyphicon glyphicon-play"></div>
-                    </button>
+                <div class="col-sm-6 portfolio-item col-left-sm"><img src="./static/images/client-checkin.png" alt="preview image for recovery center client-tracking software" class="img-responsive drop-shadow">
+                  <noscript><img src="./static/images/client-checkin.png" alt="preview image for recovery center client-tracking software" class="img-responsive drop-shadow"></noscript>
+                  <h4 class="text-center button-set hidden-xs"><a href="https://github.com/rylandbell/recovery-center-client-tracking" target="_blank">
+                      <button class="btn btn-primary project__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a>
                   </h4>
                 </div>
                 <div class="col-sm-6 col-right-sm"><br class="visible-xs">
@@ -171,10 +167,8 @@
                     <p>I worked with a small team to design an app to help substance abuse recovery facilities manage their work with clients. It includes features like:</p>
                     <p><ul class="reading-text"><li class="reading-text">Displaying daily check-in data that clients have submitted through a separate app, covering things like sleep quality or cravings level.</li><li>Tracking basic client details like contact info and administrative status.</li><li>A simple database for storing clinician's session notes while complying with HIPAA.</li><li>A scheduling tool to display Google calendars and give clinicians an easy way to block off appointment time slots, which are then booked by clients through the youcanbook.me service.</li></ul></p>
                   </div>
-                  <h4 class="text-center button-set visible-xs">
-                    <button data-toggle="modal" data-target=".carousel-modal" class="btn btn-default btn-modal">Slideshow&nbsp;&nbsp;
-                      <div class="glyphicon glyphicon-play"></div>
-                    </button>
+                  <h4 class="text-center button-set visible-xs"><a href="https://github.com/rylandbell/recovery-center-client-tracking" target="_blank">
+                      <button class="btn btn-primary project-modal__button">GitHub&nbsp;&nbsp;<img src="./static/images/github.png"></button></a>
                   </h4>
                 </div>
               </div><br class="visible-xs">
@@ -229,46 +223,6 @@
           </div>
         </div>
       </section>
-      <div class="container text-center">
-        <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" class="modal fade carousel-modal">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="slick-carousel">
-                  <div class="slick-slide">
-                    <div class="img-container"><img data-lazy="./static/images/client-checkin.png" alt="..." class="img-responsive"></div>
-                    <div class="slick-caption">
-                      <h3>Check-in History</h3>
-                      <p class="lead">Displays the client's accumulated check-in data in an interactive visualization. Eventually, we plan to add static versions of these graphs to an auto-generated, printable client&nbsp;record.</p>
-                    </div>
-                  </div>
-                  <div class="slick-slide">
-                    <div class="img-container"><img data-lazy="./static/images/client-cal.png" alt="..." class="img-responsive"></div>
-                    <div class="slick-caption">
-                      <h3>Scheduling Tool</h3>
-                      <p class="lead">Displays the clinician's Google calendar, and allows them to easily create one-time or recurring appointment slots for clients. On the client's end, scheduling is done via the YouCanBookMe&nbsp;service.</p>
-                    </div>
-                  </div>
-                  <div class="slick-slide">
-                    <div class="img-container"><img data-lazy="./static/images/client-details.png" alt="..." class="img-responsive"></div>
-                    <div class="slick-caption">
-                      <h3>Client Details</h3>
-                      <p class="lead">Tracks vital client data, including contact info, a list of emergency and clinical contacts, and the client's history and status within the recovery&nbsp;center.</p>
-                    </div>
-                  </div>
-                  <div class="slick-slide">
-                    <div class="img-container"><img data-lazy="./static/images/client-notes.png" alt="..." class="img-responsive"></div>
-                    <div class="slick-caption">
-                      <h3>Client Notes</h3>
-                      <p class="lead">Collects and displays notes from clinicians and administrative staff. Depending on a user's access priviledges, some or all of this data may be hidden for a given&nbsp;client.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- Footer-->
       <footer id="contact" class="text-center">
         <div class="footer-above">
@@ -293,14 +247,12 @@
         </div>
       </footer>
     </div>
-    <!-- Modals      -->
     <!-- jQuery-->
     <script src="./static/vendor/jquery-1.11.1.min.js"></script>
     <!-- Bootstrap Core JavaScript-->
     <script src="./static/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="./static/vendor/slick/slick.min.js"></script>
     <!-- Custom JavaScript-->
     <script src="./static/javascripts/ui.js"></script>
   </body>
